@@ -1,0 +1,16 @@
+@import '../../../styles/variables.scss';
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+
+    span {
+        color: $default-input-font-color;
+    }
+}
+
+@media screen and (max-width: $mobile-max-width-limit) {
+    .wrapper {
+        margin-top: 32px;
+    }
+}

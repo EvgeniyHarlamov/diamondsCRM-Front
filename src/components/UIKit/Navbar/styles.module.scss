@@ -1,0 +1,136 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/abstractClasses.scss";
+
+
+
+.navbarBackground {
+  background-color: $color-bg-white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+  border-bottom: solid 1px $color-bg-grey;
+}
+
+nav {
+  %navItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $default-input-font-color;
+  }
+
+  .mainBrand {
+    @extend %navItem;
+    padding: 1.2rem 1.4rem 1.2rem 0;
+
+    img {
+      height: 36px
+    }
+  }
+
+  .routeItem {
+    @extend %navItem;
+    padding: .8rem;
+
+    & span:hover {
+      color: $default-font-color;
+      transition: 0.3s;
+    }
+  }
+
+  .activeRouteItem {
+    color: $default-font-color;
+  }
+
+  span {
+    cursor: pointer;
+  }
+
+  .statusBarItem {
+    @extend %no-select;
+    @extend %navItem;
+    padding: .8rem;
+  }
+
+  .statusBarWrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    .statusBarItem {
+      @extend %navItem;
+      // flex-direction: row;
+      // align-items: center;
+      margin-right: .1rem;
+      color: $default-font-color;
+    }
+
+    .bell {
+      @extend %navItem;
+      @extend %no-select;
+      cursor: pointer;
+      margin-right: 1.3rem;
+    }
+
+
+    .arrow {
+      @extend %no-select;
+      cursor: pointer;
+      @extend %navItem;
+    }
+  }
+}
+
+.navbar {
+  display: flex;
+  height: 72px;
+}
+
+.navbarMobile {
+  display: none;
+  padding-left: 3 * $size-step;
+  padding-right: 3 * $size-step;
+
+  .mainBrand {
+    @extend %navItem;
+    padding: 10px 1.4rem 10px 0;
+  }
+}
+
+
+
+.dropdownContainer {
+  @extend %navItem;
+}
+
+
+@media screen and (max-width: $mobile-max-width-limit) {
+  .navbar {
+    display: none;
+  }
+
+  .navbarMobile {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+.exitButton {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
+
+.pushMenu {
+  width: 300px;
+}
+
+[role='tooltip'].pushPopupContent {
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+

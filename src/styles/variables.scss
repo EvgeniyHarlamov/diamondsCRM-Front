@@ -1,0 +1,41 @@
+$color-bg-white: #FFFFFF;
+$color-bg-light: #F2F2F2;
+$color-bg-dark: #F0F4F5;
+$color-bg-grey: #DCE5E6;
+$color-bg-overlay: rgba(67,67,67, 0.5);
+$color-bg-orange: #EC9A29;
+$color-bg-red:#E15252;
+$color-bg-green: #5BAE4E;
+
+$size-step: 4px;
+$default-border-radius: 4px;
+$default-small-font-size: 12px;
+$default-medium-font-size: 14px;
+$default-large-font-size: 16px;
+
+$border-radius-small: $size-step;
+$default-control-size: 12 * $size-step;
+$default-font-color: #2E3E3F;
+$default-btn-color: #2C5C5F;
+$default-input-font-color: rgba(24, 48, 50, 0.5);
+$default-border-color: rgba(24, 48, 50, 0.15);
+
+$grid-size: 1248px;
+
+$default-sidebar-gap: 24px;
+$box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+
+$green-button-color: #2C5C5F;
+$green-button-color-hover: #23474e;
+$default-button-color: $color-bg-dark;
+
+$mobile-max-width-limit: 767px;
+$mobile-min-width-limit: 320px;
+
+
+$mobile-tablet-size: 767px;
+$mobile-m-size: 375px;
+$mobile-s-size: 320px;
+
+$kanbanColumnWidth: 295px;
+$kanbanCardWidth: 290px;

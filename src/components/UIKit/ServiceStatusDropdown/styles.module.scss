@@ -1,0 +1,36 @@
+@import '../../../styles/variables.scss';
+
+.service {
+    border-radius: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 32px;
+    color: $color-bg-white;
+    font-size: 14px;
+    padding: 6.5px 16px;
+    cursor: pointer;
+
+    .icon {
+        margin-left: 9px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.free {
+    background-color: $color-bg-dark;
+    color: $default-input-font-color;
+}
+
+.onPay {
+    background-color: #528DD2;
+}
+
+.paid {
+    background-color: #5BAE4E;
+}
+
+.vip {
+    background-color: #EC9A29;
+}

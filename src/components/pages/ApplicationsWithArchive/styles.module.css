@@ -1,0 +1,124 @@
+.filtersHeaderWrapper .filtersHeaderContainer .createApplicationBtn:hover {
+  cursor: pointer;
+  background-color: #23474e;
+}
+
+.filtersHeaderWrapper .filtersHeaderContainer .createApplicationBtn {
+  background-color: #2C5C5F;
+  color: #FFFFFF;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.filtersHeaderWrapper {
+  background-color: #FFFFFF;
+  padding-top: 2rem;
+}
+
+.filtersHeaderWrapper .filtersHeaderContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.filtersHeaderWrapper .filtersHeaderContainer .filterHeaderContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filtersHeaderWrapper .filtersHeaderContainer .filterHeaderContainer .filterHeader {
+  vertical-align: text-bottom;
+  color: rgba(24, 48, 50, 0.5);
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.filtersHeaderWrapper .filtersHeaderContainer .filterHeaderContainer .filterHeaderActive {
+  vertical-align: text-bottom;
+  color: #2E3E3F;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.filtersHeaderWrapper .filtersHeaderContainer .filterHeaderContainer .filterHeader:nth-child(2), .filtersHeaderWrapper .filtersHeaderContainer .filterHeaderContainer .filterHeaderActive:nth-child(2) {
+  margin-left: 24px;
+}
+
+.filtersHeaderWrapper .filtersHeaderContainer .filterHeaderContainer .filterHeader:hover, .filtersHeaderWrapper .filtersHeaderContainer .filterHeaderContainer .filterHeaderActive:hover {
+  cursor: pointer;
+}
+
+.filtersHeaderWrapper .filtersHeaderContainer .createApplicationBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+  max-height: 48px;
+  padding: 15px 24px;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 135%;
+}
+
+.filtersHeaderWrapper .filtersHeaderContainer .mobileButtonsContainer {
+  display: none;
+}
+
+.searchBar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+  grid-column-gap: 24px;
+  padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .searchBar {
+    display: none;
+  }
+  .filtersHeaderWrapper {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .filtersHeaderWrapper .filtersHeaderContainer {
+    margin-bottom: 0;
+  }
+  .filtersHeaderWrapper .filtersHeaderContainer .filterHeaderContainer .filterHeader, .filtersHeaderWrapper .filtersHeaderContainer .filterHeaderContainer .filterHeaderActive {
+    font-size: 24px;
+  }
+  .filtersHeaderWrapper .filtersHeaderContainer .filterHeaderContainer .filterHeader:nth-child(2), .filtersHeaderWrapper .filtersHeaderContainer .filterHeaderContainer .filterHeaderActive:nth-child(2) {
+    margin-left: 12px;
+  }
+  .filtersHeaderWrapper .filtersHeaderContainer .createApplicationBtn {
+    display: none;
+  }
+  .filtersHeaderWrapper .filtersHeaderContainer .mobileButtonsContainer {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .filtersHeaderWrapper .filtersHeaderContainer .mobileButtonsContainer .findButton {
+    margin-right: 12px;
+  }
+  .snowMore {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

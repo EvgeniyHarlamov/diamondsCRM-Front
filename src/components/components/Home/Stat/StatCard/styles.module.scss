@@ -1,0 +1,73 @@
+@import '../../../../../styles/variables.scss';
+
+.cardWrapper {
+    background-color: $color-bg-white;
+    padding: 20px;
+    border-radius: $default-border-radius;
+    box-shadow: $box-shadow;
+
+    .cardContainer {
+        display: flex;
+        flex-direction: column;
+
+        .infoWrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+
+            .icon {
+                img {
+                    height: 48px;
+                }
+            }
+
+            .counter {
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 120%;
+            }
+        }
+        .titleWrapper {
+            .title {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 135%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile-s-size) {
+    .cardWrapper {
+        padding: 15px;
+        .titleWrapper {
+            min-height: 36px;
+        }
+   }
+}
+
+// @media screen and (min-width: $mobile-tablet-size) {
+//     .cardWrapper {
+//          .titleWrapper {
+//             min-height: 48px;
+//          }
+//     }
+//  }
+
+@media screen and (max-width: $mobile-max-width-limit) {
+   .cardWrapper {
+        .infoWrapper {
+            margin-bottom: 12px !important;
+            .counter {
+                font-size: 24px !important;
+            }
+        }
+        .titleWrapper {
+            .title {
+                font-size: 14px !important;
+            }
+        }
+   }
+}
+

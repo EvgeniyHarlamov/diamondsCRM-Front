@@ -1,0 +1,19 @@
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper span {
+  color: rgba(24, 48, 50, 0.5);
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    margin-top: 32px;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

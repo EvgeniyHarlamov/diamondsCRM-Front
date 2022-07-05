@@ -1,0 +1,27 @@
+@import "../../../../styles/variables.scss";
+
+.mobileDropdownContentWrapper {
+    width: 100%;
+    padding-bottom: 10px;
+
+    .item {
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+      border-radius: 4px;
+
+
+      &:hover {
+        transition: 0.3s;
+        background-color: $color-bg-dark;
+        span {
+          font-weight: 500;
+        }
+      }
+
+      span {
+        padding-left: 3 * $size-step;
+        padding-right: 3 * $size-step;
+        color: $default-font-color;
+      }
+    }
+}

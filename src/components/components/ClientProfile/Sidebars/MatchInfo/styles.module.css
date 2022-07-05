@@ -1,0 +1,197 @@
+.body {
+  padding: 0 !important;
+}
+
+.clientNameWrapper {
+  border: 1px solid rgba(24, 48, 50, 0.15);
+  padding: 12px 12px 12px 16px;
+  border-radius: 4px;
+}
+
+.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.graphsBlock {
+  padding-bottom: 16px;
+}
+
+.graphsBlock .contentWrapper {
+  padding: 16px 32px 0;
+}
+
+.graphsBlock .contentWrapper .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.graphsBlock .contentWrapper .content .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30%;
+  margin: 0 5px 24px 0;
+}
+
+.graphsBlock .contentWrapper .content .item span {
+  font-size: 12px;
+  text-align: center;
+}
+
+.graphsBlock .tipsWrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 16px;
+          column-gap: 16px;
+  border: 1px solid rgba(24, 48, 50, 0.15);
+  border-radius: 62px;
+  padding: 5px 16px;
+}
+
+.graphsBlock .tipsWrapper .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.graphsBlock .tipsWrapper .item .imgWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 8px;
+}
+
+.graphsBlock .tipsWrapper .item .imgWrapper img {
+  height: 5px;
+  width: 5px;
+}
+
+.graphsBlock .tipsWrapper .item span {
+  font-size: 12px;
+  color: rgba(24, 48, 50, 0.5);
+}
+
+.outcomeWrapper {
+  padding: 16px 16px 0;
+}
+
+.outcomeWrapper .outcomeGraphWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  margin: 0 5px 20px 0;
+}
+
+.outcomeWrapper .outcomeGraphWrapper span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.matchGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 16px;
+          column-gap: 16px;
+  padding: 0 20px 20px;
+}
+
+.matchGrid .name {
+  color: rgba(24, 48, 50, 0.5);
+  font-size: 12px;
+  border-bottom: 1px solid rgba(24, 48, 50, 0.15);
+  padding-bottom: 8px;
+}
+
+.matchGrid .matchItem, .matchGrid .noMatchItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid rgba(24, 48, 50, 0.15);
+  padding: 8px 0;
+}
+
+.matchGrid .matchItem .imgContainer, .matchGrid .noMatchItem .imgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.matchGrid .matchItem .imgContainer img, .matchGrid .noMatchItem .imgContainer img {
+  height: 9px;
+  margin-right: 6px;
+}
+
+.matchGrid .matchItem span, .matchGrid .noMatchItem span {
+  font-size: 14px;
+}
+
+.matchGrid .matchItem span {
+  color: #5BAE4E;
+}
+
+.matchGrid .noMatchItem span {
+  color: #E15252;
+}
+
+@media screen and (max-width: 767px) {
+  .graphsBlock .contentWrapper .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+  }
+  .matchGrid {
+    min-height: auto;
+  }
+  .button {
+    width: auto;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

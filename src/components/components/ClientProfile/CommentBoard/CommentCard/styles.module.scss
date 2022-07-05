@@ -1,0 +1,112 @@
+@import '../../../../../styles/variables.scss';
+
+.boardCard {
+    margin-top: 24px;
+    background-color: $color-bg-white;
+    padding: 16px 20px 16px;
+    display: flex;
+    flex-direction: column;
+    border-radius: $default-border-radius;
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 12px;
+
+        .infoDesktop {
+            display: flex;
+
+            .nameContainer {
+                display: flex;
+                align-items: center;
+                font-weight: 500;
+                font-size: $default-large-font-size;
+            }
+
+            .separator {
+                font-size: $default-medium-font-size;
+                font-weight: 600;
+                color: $default-input-font-color;
+                margin: 0 12px 11px;
+                padding-bottom: 10px
+
+                span {
+                    width: 5px;
+                    height: 5px;
+                }
+            }
+
+            .dateContainer {
+                display: flex;
+                align-items: center;
+                color: $default-input-font-color;
+            }
+        }
+
+        .infoMobile {
+            display: none;
+        }
+
+        .descContainer {
+            display: flex;
+            align-items: center;
+            color: $default-input-font-color;
+            cursor: pointer;
+            img {
+                max-width: 16px;
+                max-height: 4px;
+            }
+        }
+    }
+
+    a {
+        color: $default-input-font-color;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: $mobile-max-width-limit) {
+    .boardCard {
+        margin-top: 8px;
+
+        .header {
+
+            .infoDesktop {
+                display: none;
+            }
+
+            .infoMobile {
+                display: flex;
+                flex-direction: row;
+
+                .avatarAndNameContainer {
+                    display: flex;
+
+                    .nameAndDateContainer {
+                        display: flex;
+                        flex-direction: column;
+
+                        .name {
+                            font-size: $default-medium-font-size;
+                        }
+
+                        .date {
+                            color: $default-input-font-color;
+                            font-size: $default-small-font-size;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+    }
+}
+
+.popupMenuButton {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}

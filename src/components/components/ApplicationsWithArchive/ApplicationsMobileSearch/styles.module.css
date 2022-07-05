@@ -1,0 +1,12 @@
+@media screen and (max-width: 767px) {
+  .formListCustom {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .formListCustom {
+    display: block !important;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

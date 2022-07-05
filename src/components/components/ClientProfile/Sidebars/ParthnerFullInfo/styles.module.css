@@ -1,0 +1,15 @@
+.body {
+  padding: 0 0 80px !important;
+}
+
+.sectionWrapper {
+  width: 100%;
+  color: rgba(24, 48, 50, 0.5);
+  background-color: #F0F4F5;
+}
+
+.sectionWrapper .section {
+  font-size: 12px;
+  padding: 11px 20px;
+}
+/*# sourceMappingURL=styles.module.css.map */

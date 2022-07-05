@@ -1,0 +1,45 @@
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.title .nameWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.title .nameWrapper .nameContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.title .nameWrapper .nameContainer .name {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.title .nameWrapper .nameContainer .matchPercent {
+  margin: 4px 0 16px 0;
+  color: rgba(24, 48, 50, 0.5);
+  font-size: 12px;
+}
+
+.title .button {
+  padding: 13px 0;
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=styles.module.css.map */

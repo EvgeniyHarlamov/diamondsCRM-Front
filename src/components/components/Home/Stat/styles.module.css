@@ -1,0 +1,61 @@
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.row .item {
+  width: 25%;
+  padding-left: 24px;
+  margin-bottom: 24px;
+}
+
+.row .item:first-child {
+  padding-left: 0;
+}
+
+.row .firstItem {
+  padding-left: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .row .item {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 8px;
+  }
+  .row .item:first-child {
+    padding-left: 16px;
+  }
+}
+
+.grid {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .row {
+    display: none;
+  }
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    grid-column-gap: 9px;
+    grid-row-gap: 8px;
+    padding: 0 16px;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

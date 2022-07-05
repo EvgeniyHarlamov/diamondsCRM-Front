@@ -1,0 +1,82 @@
+.sidebar, .sidebarLarge {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  background-color: #FFFFFF;
+  width: 100%;
+  min-width: 320px;
+  max-width: 500px;
+  height: 100vh;
+}
+
+.sidebar .blockWrapper, .sidebarLarge .blockWrapper {
+  min-height: 71px;
+  padding: 24px 24px 0 24px;
+}
+
+.sidebar .titleBlockWrapper, .sidebarLarge .titleBlockWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar .titleBlockWrapper .titleContainer, .sidebarLarge .titleBlockWrapper .titleContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sidebar .titleBlockWrapper .titleContainer .title, .sidebarLarge .titleBlockWrapper .titleContainer .title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 135%;
+}
+
+.sidebar .titleBlockWrapper .titleContainer .closeBtn, .sidebarLarge .titleBlockWrapper .titleContainer .closeBtn {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.sidebar .subtitleBlockWrapper, .sidebarLarge .subtitleBlockWrapper {
+  margin-top: 8px;
+  margin-bottom: 22px;
+}
+
+.sidebar .subtitleBlockWrapper span, .sidebarLarge .subtitleBlockWrapper span {
+  color: rgba(24, 48, 50, 0.5);
+  font-size: 14px;
+}
+
+.sidebar .body, .sidebarLarge .body {
+  height: 100%;
+  padding: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .sidebar, .sidebarLarge {
+    overflow: auto;
+    width: 100%;
+    min-width: 100%;
+    max-height: 100vh;
+    height: 100%;
+  }
+  .sidebarScrollbar {
+    overflow: visible !important;
+  }
+}
+
+.sidebarLarge {
+  max-width: 740px;
+}
+/*# sourceMappingURL=styles.module.css.map */

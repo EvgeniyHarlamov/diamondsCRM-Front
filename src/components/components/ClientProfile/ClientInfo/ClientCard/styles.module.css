@@ -1,0 +1,60 @@
+.cardWrapper {
+  padding: 20px 20px 0;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+.cardWrapper .MainInfoWrapper {
+  margin-bottom: 20px;
+}
+
+.cardWrapper .MainInfoWrapper .name {
+  font-weight: 500;
+  font-size: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cardWrapper .infoFieldContainer {
+  border-collapse: collapse;
+  border-top: 1px solid rgba(24, 48, 50, 0.15);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 12px 0;
+}
+
+.cardWrapper .infoFieldContainer .field {
+  color: rgba(24, 48, 50, 0.5);
+  font-size: 14px;
+}
+
+.cardWrapper .infoFieldContainer .fieldValue {
+  font-size: 14px;
+}
+
+.cardWrapper .detailsButton {
+  margin: 12px 0 20px;
+  padding: 13px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .cardWrapper {
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+  .cardWrapper .infoFieldContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

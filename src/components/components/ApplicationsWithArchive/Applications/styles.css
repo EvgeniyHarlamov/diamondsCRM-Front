@@ -1,0 +1,34 @@
+.react-kanban-column {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                      supported by Chrome, Edge, Opera and Firefox */
+}
+
+.react-kanban-column {
+  min-width: 295px !important;
+  max-width: 295px !important;
+  min-height: 100vh !important;
+  padding: 15px 0 150px 0 !important;
+  background-color: #F0F4F5;
+  overflow: overlay !important;
+}
+
+.react-kanban-board {
+  padding: 5px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .react-kanban-board {
+    padding: 0 16px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

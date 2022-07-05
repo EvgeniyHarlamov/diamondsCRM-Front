@@ -1,0 +1,40 @@
+@import '../../../../../styles/variables.scss';
+@import '../../../../../styles/abstractClasses.scss';
+
+.table {
+  @extend %table;
+  tr {
+      td {
+        @media screen and (max-width: $mobile-s-size)  {
+          &:nth-child(2) {
+            width: 20% !important;
+          }
+
+            &:nth-child(3) {
+              display: none;
+            }
+
+            &:nth-child(4) {
+              display: none;
+            }
+
+            &:nth-child(5) {
+              width: auto !important;
+            }
+        }
+
+        @media screen and (min-width: $mobile-s-size + 1) and (max-width: $mobile-m-size) {
+            &:nth-child(2) {
+              width: 25% !important;
+            }
+
+        }
+
+        @media screen and (min-width: $mobile-m-size + 1) and (max-width: $mobile-tablet-size) {
+          &:nth-child(2) {
+            width: 40% !important;
+          }
+        }
+      }
+    }
+  }

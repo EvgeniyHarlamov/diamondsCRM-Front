@@ -1,0 +1,24 @@
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/abstractClasses.scss';
+
+
+
+.react-kanban-column {
+    min-width: $kanbanColumnWidth !important;
+    max-width: $kanbanColumnWidth !important;
+    min-height: 100vh !important;
+    padding: 15px 0 150px 0!important;
+    background-color: $color-bg-dark;
+    overflow: overlay !important;
+    @extend %no-select;
+}
+
+.react-kanban-board {
+    padding: 5px 0;
+}
+
+@media screen and (max-width: $mobile-max-width-limit) {
+    .react-kanban-board {
+        padding: 0 16px;
+    }
+}

@@ -1,0 +1,136 @@
+.input {
+  background-color: #F0F4F5;
+  border-radius: 4px;
+  border: none;
+  height: 48px;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.inputMenu {
+  padding: 1rem;
+  width: 100%;
+}
+
+.inputHeaderWrapper {
+  cursor: pointer;
+  padding-right: 16px;
+  padding-left: 16px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.inputHeaderWrapper .inputHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(24, 48, 50, 0.5) !important;
+}
+
+.inputHeaderWrapper .inputPicWrapper {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inputHeaderWrapper .inputPicWrapper .inputPic {
+  font-weight: normal;
+}
+
+.InnerAddon {
+  position: relative;
+}
+
+.InnerAddon input {
+  width: 100%;
+  padding-right: 0 !important;
+}
+
+.InnerAddon img {
+  position: absolute;
+  right: 0px;
+  padding-right: 1rem;
+  pointer-events: none;
+  top: 1rem;
+}
+
+.fadeIn {
+  animation: fadeIn ease .2s;
+  -webkit-animation: fadeIn ease .2s;
+  -moz-animation: fadeIn ease .2s;
+  -o-animation: fadeIn ease .2s;
+  -ms-animation: fadeIn ease .2s;
+}
+
+.fadeOut {
+  animation: fadeOut ease .5s;
+  -webkit-animation: fadeOut ease .5s;
+  -moz-animation: fadeOut ease .5s;
+  -o-animation: fadeOut ease .5s;
+  -ms-animation: fadeOut ease .5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .inputMenu .item {
+    padding: .2rem 0;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

@@ -1,0 +1,59 @@
+@import '../../../../styles/variables.scss';
+
+.wrapper {
+    display: flex;
+
+    .ageFrom {
+        input {
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+        }
+    }
+
+    .ageTo {
+
+        input {
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+
+        }
+    }
+}
+
+.separatorWrapper {
+    background-color: $color-bg-dark;
+    display: flex;
+    justify-content: center;
+
+    .separator {
+        background-color: $color-bg-dark;
+        height: 32px;
+        width: 1px;
+    }
+}
+
+.label {
+    font-size: 14px;
+    line-height: 135%;
+    color: rgba(24, 48, 50, 0.5);
+    margin-bottom: 7px !important;
+}
+
+
+
+// @media screen and (max-width: $mobile-s-size) {
+    .sidebarFooter {
+        min-height: 150px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 20px;
+
+        .btnsContainer {
+            height: 48px;
+            // margin-bottom: 20px;
+        }
+
+    }
+// }

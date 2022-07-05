@@ -1,0 +1,82 @@
+@import '../../../../styles/abstractClasses.scss';
+
+.table {
+    @extend %table;
+
+    thead th {
+        width: 25%;
+    }
+
+    tbody tr{
+        display: none;
+
+        @for $i from 1 through 8 {
+            &:nth-child(#{$i}) {
+                display: table-row;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: $mobile-max-width-limit) {
+    .table {
+
+        tbody tr{
+            @for $i from 6 through 8 {
+                &:nth-child(#{$i}) {
+                    display: none !important;
+                }
+            }
+        }
+
+        thead th {
+            &:nth-child(1) {
+                display: table-cell;
+                padding-left: 16px !important;
+            }
+
+            &:nth-child(2) {
+                display: none;
+            }
+
+            &:nth-child(3) {
+                display: none;
+            }
+
+
+            &:nth-child(4) {
+                display: table-cell;
+                text-align: right;
+                padding-right: 16px;
+            }
+        }
+
+        tbody tr td {
+            &:nth-child(1) {
+                display: table-cell;
+                padding-left: 16px !important;
+            }
+
+            &:nth-child(2) {
+                display: none;
+            }
+
+            &:nth-child(3) {
+                display: none;
+            }
+
+            &:nth-child(4) {
+                display: table-cell;
+                text-align: right;
+                padding-right: 16px;
+            }
+        }
+
+    }
+}
+
+.notFound {
+    display: flex;
+    justify-content: center;
+}

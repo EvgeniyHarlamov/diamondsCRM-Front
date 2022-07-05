@@ -1,0 +1,7 @@
+@import '../../../../styles/variables.scss';
+
+@media screen and (max-width: $mobile-max-width-limit) {
+    .button {
+        width: auto;
+    }
+}

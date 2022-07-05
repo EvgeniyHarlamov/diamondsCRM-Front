@@ -1,0 +1,28 @@
+@import '../../../../../styles/variables.scss';
+
+.clientNameWrapper {
+    border: 1px solid $default-border-color;
+    padding: 12px 12px 12px 16px;
+    border-radius: $default-border-radius;
+}
+
+.meetingData {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+}
+
+@media screen and (max-width: $mobile-max-width-limit) {
+    .meetingData {
+        grid-template-columns: 1fr;
+    }
+
+    .button {
+        width: auto;
+    }
+}
+
+.fullwidth {
+    width: 100%;
+}
+

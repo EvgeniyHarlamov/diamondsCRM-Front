@@ -1,0 +1,156 @@
+.wrapper .cityContainer .field, .wrapper .birthplaceContainer .field, .wrapper .avatarContainer .mainInfoContainer .inChargeContainer .field {
+  color: rgba(24, 48, 50, 0.5);
+  font-size: 14px;
+  padding-bottom: 8px;
+}
+
+.wrapper .cityContainer .value, .wrapper .birthplaceContainer .value {
+  color: #2E3E3F;
+  font-size: 14px;
+}
+
+.wrapper .cityContainer, .wrapper .birthplaceContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12px 0;
+  border-top: 1px solid rgba(24, 48, 50, 0.15);
+}
+
+.wrapper .cityContainer:last-child, .wrapper .birthplaceContainer:last-child {
+  border-bottom: 1px solid rgba(24, 48, 50, 0.15);
+}
+
+.header {
+  padding-bottom: 0 !important;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 16px;
+}
+
+.wrapper .avatarContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .avatarContainer .imgContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.wrapper .avatarContainer .imgContainer img {
+  max-width: 128px;
+  max-height: 128px;
+}
+
+.wrapper .avatarContainer .mainInfoContainer .inChargeContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 17px;
+}
+
+.wrapper .avatarContainer .mainInfoContainer .inChargeContainer .field {
+  font-size: 14px;
+  padding-bottom: 0;
+}
+
+.wrapper .avatarContainer .mainInfoContainer .inChargeContainer .inChargeName {
+  margin-left: 14px;
+}
+
+.wrapper .avatarContainer .mainInfoContainer .buttonWrapper {
+  width: 117px;
+}
+
+.actionButtons {
+  border-bottom: 1px solid rgba(24, 48, 50, 0.15);
+}
+
+.actionButtons .downloadPresentButton {
+  background-color: #EC9A29;
+}
+
+.actionButtons .downloadPresentButton span {
+  color: #FFFFFF;
+}
+
+.actionButtons .takeToWorkButton {
+  background-color: #2C5C5F;
+}
+
+.actionButtons .takeToWorkButton span {
+  color: #FFFFFF;
+}
+
+.tabsContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tabsContainer .tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid transparent;
+}
+
+.tabsContainer .tab:last-child span {
+  margin-right: 8px;
+}
+
+.tabsContainer .tab span {
+  color: rgba(24, 48, 50, 0.5);
+}
+
+.tabsContainer .tabActive {
+  border-bottom: 1px solid #EC9A29;
+}
+
+.tabsContainer .tabActive span {
+  color: #2E3E3F;
+}
+
+.logoFill {
+  height: 96px !important;
+  width: 96px;
+}
+
+.logoFill span {
+  font-size: 64px;
+}
+/*# sourceMappingURL=styles.module.css.map */

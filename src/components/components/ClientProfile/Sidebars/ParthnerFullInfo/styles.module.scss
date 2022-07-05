@@ -1,0 +1,20 @@
+@import '../../../../../styles/variables.scss';
+
+
+.body {
+    padding: 0 0 80px!important;
+    // position: absolute;
+    // top: 0;
+}
+
+.sectionWrapper {
+    width: 100%;
+    color: $default-input-font-color;
+    background-color: $color-bg-dark;
+
+    .section {
+        font-size: $default-small-font-size;
+        padding: 11px 20px;
+    }
+}
+

@@ -1,0 +1,29 @@
+.clientNameWrapper {
+  border: 1px solid rgba(24, 48, 50, 0.15);
+  padding: 12px 12px 12px 16px;
+  border-radius: 4px;
+}
+
+.meetingData {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 16px;
+          column-gap: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .meetingData {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .button {
+    width: auto;
+  }
+}
+
+.fullwidth {
+  width: 100%;
+}
+/*# sourceMappingURL=styles.module.css.map */

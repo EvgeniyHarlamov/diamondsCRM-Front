@@ -1,0 +1,11 @@
+.page {
+  background-color: #F2F2F2;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 767px) {
+  .page {
+    min-height: 100%;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

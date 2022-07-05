@@ -1,0 +1,176 @@
+
+@import '../../../../../styles/variables.scss';
+@import '../../../../../styles/abstractClasses.scss';
+
+.cardWrapper {
+    @extend %no-select ;
+    padding: 20px 20px 0;
+    background: $color-bg-white;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+    border-radius: $default-border-radius;
+    cursor: pointer;
+
+    // min-height: 401px;
+
+    .MainInfoWrapper {
+        margin-bottom: 20px;
+
+        .AvatarAndServiceContainer {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+        }
+
+        .name{
+            font-weight: 500;
+            font-size: 18px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .avatar {
+            img {
+                width: 64px;
+                height: 64px;
+                border-radius: 210px;
+            }
+
+        }
+    }
+
+
+    .infoFieldContainer {
+        border-collapse: collapse;
+        border-top: 1px solid rgba(24, 48, 50, 0.15);
+        display: flex;
+        // flex-direction: column;
+        justify-content: space-between;
+        padding: 12px 0;
+
+        .field {
+            color: $default-input-font-color;
+            font-size: 14px;
+        }
+
+        .fieldValue {
+            font-size: 14px;
+            // display: none
+        }
+
+
+    }
+
+    .avatarWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid rgba(24, 48, 50, 0.15);
+        padding-top: 26px;
+        padding-bottom: 30px;
+        min-height: 98px;
+
+
+        .button {
+            @extend %defaultBtn;
+            font-size: 14px;
+            padding: 8.5px 16px;
+        }
+
+        .timeWrapper {
+            display: flex;
+            align-items: center;
+            text-align: end;
+            .time {
+              font-size: 12px;
+              color: $default-input-font-color;
+            }
+          }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 871px) {
+    .cardWrapper {
+        .avatarWrapper {
+            .button {
+                max-width: 139px;
+                min-height: 61px;
+            }
+
+        }
+    }
+}
+
+
+@media screen and (max-width: 299px) {
+    .cardWrapper {
+        .avatarWrapper {
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+
+            .button {
+                width: 100%;
+            }
+
+            .timeWrapper {
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+.logoFill {
+    height: 64px !important;
+    width: 64px;
+}
+// @media screen and (min-width: 768px) and (max-width: 1090px) {
+//     .cardWrapper {
+
+//         .MainInfoWrapper {
+//             .AvatarAndServiceContainer {
+//                 flex-direction: column;
+
+//                 .avatar {
+//                     margin: 0 auto;
+//                 }
+
+//                 .service {
+//                     margin-top: 20px;
+//                 }
+//             }
+
+//             .name {
+//                 text-align: center;
+//             }
+
+
+//         }
+
+//         .infoFieldContainer {
+//             flex-direction: column;
+//         }
+
+
+//         .avatarWrapper {
+//             flex-direction: column;
+
+//             .avatar {
+//                 justify-content: center;
+//             }
+
+//             .button {
+//                 min-height: 61px;
+//                 // min-height: ;
+//             }
+
+//             .timeWrapper {
+//                 // text-align: center;
+//                 justify-content: center;
+//                 margin-top: 5px;
+//             }
+//         }
+//     }
+
+// }

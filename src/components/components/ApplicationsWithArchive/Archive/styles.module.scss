@@ -1,0 +1,145 @@
+@import "../../../../styles/variables.scss";
+@import "../../../../styles/abstractClasses.scss";
+
+.tableContentWrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #F0F4F5;
+
+  .tableHeader {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+
+    .pagginationPanel {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+
+      .item {
+        margin-left: 32px;
+        display: flex;
+        align-items: center;
+
+        & span {
+          font-size: 14px;
+          color: $default-input-font-color;
+        }
+      }
+    }
+
+    .sortFiltersContainer {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+  }
+
+}
+
+%status {
+  @extend %defaultBtn;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 136px;
+  width: fit-content;
+  font-size: 14px;
+  height: auto;
+  min-height: 32px;
+  padding: 5px 16px;
+  border-radius: 96px;
+
+}
+
+.adminStatus {
+  @extend %status;
+}
+
+.managerStatus {
+  @extend %status;
+  width: 102px;
+  background-color: #EFAB3C;
+}
+
+%sidebarBtn {
+  width: 100%;
+  border-radius: 4px;
+  height: 48px;
+}
+
+.hideSortPlaceholder {
+  display: block;
+}
+
+
+@media screen and (max-width: $mobile-max-width-limit) {
+  .hideSortPlaceholder {
+    display: none;
+  }
+
+  .snowMore {
+    display: none;
+  }
+
+  .adminStatus {
+    font-size: 12px;
+    max-width: 70px;
+  }
+
+  .managerStatus {
+    font-size: 12px;
+    max-width: 92px;
+  }
+
+  .statusWrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .tableContentWrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #F0F4F5;
+
+    .tableHeader {
+      .pagginationPanel {
+        display: flex;
+        gap: 0;
+        padding-left: 4 * $size-step !important;
+        .item {
+          margin-left: 0;
+          & span {
+            font-size: 14px;
+            color: $default-input-font-color;
+          }
+        }
+      }
+      .sortFiltersContainer {
+        padding-right: 4 * $size-step !important;
+      }
+    }
+  }
+}
+
+
+.inChargeWrapper {
+  display: flex;
+  flex-direction: row;
+
+  .inChargeName {
+    display: flex;
+    align-items: center;
+}
+
+  @media screen and (max-width: $mobile-max-width-limit) {
+    display: flex;
+    justify-content: flex-end;
+
+    .inChargeName {
+      font-size: 14px;
+    }
+  }
+}

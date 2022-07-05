@@ -1,0 +1,57 @@
+@import '../../../../../styles/variables.scss';
+@import '../../../../../styles/abstractClasses.scss';
+
+.cardWrapper {
+    padding: 20px 20px 0;
+    background: $color-bg-white;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+    border-radius: $default-border-radius;
+    margin-bottom: 24px;
+
+    .MainInfoWrapper {
+        margin-bottom: 20px;
+
+        .name{
+            font-weight: 500;
+            font-size: 18px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+
+
+    .infoFieldContainer {
+        border-collapse: collapse;
+        border-top: 1px solid rgba(24, 48, 50, 0.15);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 12px 0;
+
+        .field {
+            color: $default-input-font-color;
+            font-size: 14px;
+        }
+
+        .fieldValue {
+            font-size: 14px;
+        }
+    }
+
+    .detailsButton {
+        margin: 12px 0 20px;
+        padding: 13px 0;
+    }
+}
+
+@media screen and (max-width: $mobile-max-width-limit) {
+    .cardWrapper {
+        margin-top: 8px;
+        margin-bottom: 0;
+
+        .infoFieldContainer {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

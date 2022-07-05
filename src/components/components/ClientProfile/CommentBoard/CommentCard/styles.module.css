@@ -1,0 +1,139 @@
+.boardCard {
+  margin-top: 24px;
+  background-color: #FFFFFF;
+  padding: 16px 20px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 4px;
+}
+
+.boardCard .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 12px;
+}
+
+.boardCard .header .infoDesktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.boardCard .header .infoDesktop .nameContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.boardCard .header .infoDesktop .separator {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(24, 48, 50, 0.5);
+  margin: 0 12px 11px;
+  padding-bottom: 10px span;
+  padding-bottom-width: 5px;
+  padding-bottom-height: 5px;
+}
+
+.boardCard .header .infoDesktop .dateContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(24, 48, 50, 0.5);
+}
+
+.boardCard .header .infoMobile {
+  display: none;
+}
+
+.boardCard .header .descContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(24, 48, 50, 0.5);
+  cursor: pointer;
+}
+
+.boardCard .header .descContainer img {
+  max-width: 16px;
+  max-height: 4px;
+}
+
+.boardCard a {
+  color: rgba(24, 48, 50, 0.5);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .boardCard {
+    margin-top: 8px;
+  }
+  .boardCard .header .infoDesktop {
+    display: none;
+  }
+  .boardCard .header .infoMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .boardCard .header .infoMobile .avatarAndNameContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .boardCard .header .infoMobile .avatarAndNameContainer .nameAndDateContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .boardCard .header .infoMobile .avatarAndNameContainer .nameAndDateContainer .name {
+    font-size: 14px;
+  }
+  .boardCard .header .infoMobile .avatarAndNameContainer .nameAndDateContainer .date {
+    color: rgba(24, 48, 50, 0.5);
+    font-size: 12px;
+  }
+}
+
+.popupMenuButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.module.css.map */

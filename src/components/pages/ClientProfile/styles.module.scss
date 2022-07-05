@@ -1,0 +1,13 @@
+@import '../../../styles/variables.scss';
+
+.page {
+    background-color: #F2F2F2;
+    min-height: 100vh;
+}
+
+
+@media screen and (max-width: $mobile-max-width-limit) {
+    .page {
+        min-height: 100%;
+    }
+}

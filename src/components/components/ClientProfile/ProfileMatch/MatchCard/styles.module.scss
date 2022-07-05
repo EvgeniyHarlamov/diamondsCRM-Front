@@ -1,0 +1,109 @@
+@import '../../../../../styles/variables.scss';
+
+.cardWrapper {
+    padding: 20px 20px 20px;
+    background: $color-bg-white;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+    border-radius: $default-border-radius;
+    margin-bottom: 24px;
+    cursor: pointer;
+
+    .header {
+        display: flex;
+        flex-direction: column;
+
+        .imgContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            margin-right: 16px;
+            min-height: 56px;
+
+            img {
+                border-radius: 210px;
+                height: 100%;
+                width: 100%;
+                max-width: 56px;
+                max-height: 56px;
+            }
+
+            .logoFill {
+                width: 56px;
+                height: 56px !important;
+            }
+        }
+
+        .nameAndCityContainer {
+            display: flex;
+            flex-direction: column;
+
+            .name {
+                font-weight: 500;
+                font-size: $default-large-font-size;
+                margin-bottom: 2px;
+            }
+
+            .city {
+                color: $default-input-font-color;
+                font-size: $default-medium-font-size;
+            }
+            margin-bottom: 16px;
+        }
+
+        border-bottom: 1px solid $default-border-color;
+    }
+
+    .contentWrapper {
+        padding: 16px 0 0;
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 2px;
+
+            .item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 28%;
+                margin: 0 10px 24px 0;
+
+                span {
+                    font-size: $default-small-font-size;
+                }
+            }
+        }
+    }
+
+    .detailsButton {
+        margin: 12px 0 20px;
+        padding: 13px 0;
+    }
+}
+
+.downloadPresentButton {
+    height: auto !important;
+    padding: 13px 0;
+}
+
+@media screen and (max-width: $mobile-max-width-limit) {
+    .cardWrapper {
+        margin-top: 8px;
+        margin-bottom: 0;
+
+
+        .header {
+            flex-direction: row;
+            align-items: center;
+
+
+        }
+
+        .contentWrapper {
+            padding: 16px 16px 0;
+
+        }
+    }
+}

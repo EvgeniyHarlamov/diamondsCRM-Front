@@ -1,0 +1,61 @@
+@import "../../../../styles/variables.scss";
+
+.header {
+  box-shadow: $box-shadow;
+  padding-top: 34px;
+  padding-bottom: 8 * $size-step;
+  background-color: $color-bg-white;
+
+  span {
+    color: $default-input-font-color;
+  }
+
+  .hello {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 135%;
+  }
+
+  .topbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4 * $size-step;
+
+
+    .date {
+      display: flex;
+      align-items: center;
+
+      .dot {
+        margin-right: $size-step * 2;
+        margin-left: $size-step * 2;
+      }
+    }
+  }
+}
+
+.employeeCount {
+  display: block;
+}
+
+
+@media screen and (max-width: $mobile-max-width-limit) {
+  .header {
+    .hello {
+      font-size: 24px;
+    }
+  }
+  .employeeCount {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $mobile-min-width-limit) {
+  .header {
+    .hello {
+      font-size: 22px;
+    }
+  }
+}

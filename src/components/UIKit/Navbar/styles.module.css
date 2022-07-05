@@ -1,0 +1,139 @@
+nav .statusBarItem, nav .statusBarWrapper .bell, nav .statusBarWrapper .arrow {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                      supported by Chrome, Edge, Opera and Firefox */
+}
+
+.navbarBackground {
+  background-color: #FFFFFF;
+}
+
+nav .mainBrand, nav .routeItem, nav .statusBarItem, nav .statusBarWrapper .statusBarItem, nav .statusBarWrapper .bell, nav .statusBarWrapper .arrow, nav .navbarMobile .mainBrand, .navbarMobile nav .mainBrand, nav .dropdownContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgba(24, 48, 50, 0.5);
+}
+
+nav .mainBrand {
+  padding: 1.2rem 1.4rem 1.2rem 0;
+}
+
+nav .mainBrand img {
+  height: 36px;
+}
+
+nav .routeItem {
+  padding: .8rem;
+}
+
+nav .routeItem span:hover {
+  color: #2E3E3F;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav .activeRouteItem {
+  color: #2E3E3F;
+}
+
+nav span {
+  cursor: pointer;
+}
+
+nav .statusBarItem {
+  padding: .8rem;
+}
+
+nav .statusBarWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+nav .statusBarWrapper .statusBarItem {
+  margin-right: .1rem;
+  color: #2E3E3F;
+}
+
+nav .statusBarWrapper .bell {
+  cursor: pointer;
+  margin-right: 1.3rem;
+}
+
+nav .statusBarWrapper .arrow {
+  cursor: pointer;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 72px;
+}
+
+.navbarMobile {
+  display: none;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.navbarMobile .mainBrand {
+  padding: 10px 1.4rem 10px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    display: none;
+  }
+  .navbarMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.exitButton {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px;
+}
+
+.pushMenu {
+  width: 300px;
+}
+
+[role='tooltip'].pushPopupContent {
+  width: 400px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+/*# sourceMappingURL=styles.module.css.map */

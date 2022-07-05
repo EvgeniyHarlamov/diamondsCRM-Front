@@ -1,0 +1,12 @@
+@import '../../../styles/variables.scss';
+
+.track {
+    width: 5px !important;
+  z-index: 1000;
+}
+
+@media screen and (max-width: $mobile-max-width-limit) {
+    .track {
+        width: 2px !important;
+    }
+}

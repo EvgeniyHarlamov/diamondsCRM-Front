@@ -1,0 +1,5 @@
+@import '../../../../styles/abstractClasses.scss';
+
+.table {
+    @extend %table;
+}

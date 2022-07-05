@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "abstractClasses.scss",
+        "variables.scss"
+    ],
+    "names": [],
+    "file": "abstractClasses.css"
+}

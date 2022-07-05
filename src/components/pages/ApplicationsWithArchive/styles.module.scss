@@ -1,0 +1,115 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/abstractClasses.scss";
+
+
+.filtersHeaderWrapper {
+  background-color: #FFFFFF;
+  padding-top: 2rem;
+
+  .filtersHeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+
+    .filterHeaderContainer {
+      display: flex;
+      align-items: center;
+
+      .filterHeader {
+        vertical-align: text-bottom;
+        color: $default-input-font-color;
+        font-weight: 500;
+        font-size: 32px;
+
+      }
+
+      .filterHeaderActive {
+        vertical-align: text-bottom;
+        color: $default-font-color;
+        font-weight: 500;
+        font-size: 32px;
+      }
+
+      .filterHeader, .filterHeaderActive {
+          &:nth-child(2) {
+              margin-left: 24px;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+      }
+    }
+
+    .createApplicationBtn {
+      @extend %defaultBtn;
+      display: flex;
+      align-items: center;
+      border-radius: 4px;
+      max-height: 48px;
+      padding: 15px 24px;
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      line-height: 135%;
+
+      &:hover {
+        @extend %defaultBtnHover;
+      }
+    }
+
+    .mobileButtonsContainer {
+      display: none;
+    }
+  }
+}
+
+.searchBar {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-column-gap: 24px;
+  padding-bottom: 2rem;
+}
+
+
+@media screen and (max-width: $mobile-max-width-limit) {
+  .searchBar {
+    display: none;
+  }
+
+  .filtersHeaderWrapper {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    .filtersHeaderContainer {
+      margin-bottom: 0;
+
+      .filterHeaderContainer {
+
+      .filterHeader, .filterHeaderActive{
+        font-size: 24px;
+
+        &:nth-child(2) {
+            margin-left: 12px;
+        }
+      }
+    }
+
+      .createApplicationBtn {
+        display: none;
+      }
+
+      .mobileButtonsContainer {
+        display: flex !important;
+        flex-direction: row;
+
+        .findButton {
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+
+  .snowMore {
+    display: none;
+  }
+}

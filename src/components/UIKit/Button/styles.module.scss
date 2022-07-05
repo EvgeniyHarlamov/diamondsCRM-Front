@@ -1,0 +1,45 @@
+@import "../../../styles/variables.scss";
+
+%defaultBtn {
+    background-color: #ECF1F1;
+    color: $default-font-color;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+%defaultBtnHover {
+    cursor: pointer;
+}
+
+.defaultButton {
+    @extend %defaultBtn;
+
+    &:hover {
+        @extend %defaultBtnHover;
+    }
+}
+
+.greenButton {
+    @extend %defaultBtn;
+    background-color: $green-button-color;
+    color: $color-bg-white;
+
+    &:hover {
+        @extend %defaultBtnHover;
+        background-color: $green-button-color-hover;
+    }
+}
+
+@media screen and (max-width: $mobile-max-width-limit) {
+    %defaultBtn {
+        padding: 15px 27px;
+        margin-bottom: 12px !important;
+    }
+}

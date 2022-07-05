@@ -1,0 +1,115 @@
+.cardWrapper {
+  padding: 20px 20px 0;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+.cardWrapper .MainInfoWrapper {
+  margin-bottom: 20px;
+}
+
+.cardWrapper .MainInfoWrapper .name {
+  font-weight: 500;
+  font-size: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cardWrapper .docInfoWrapper {
+  border-collapse: collapse;
+  border-top: 1px solid rgba(24, 48, 50, 0.15);
+  font-size: 14px;
+}
+
+.cardWrapper .docInfoWrapper .header {
+  margin-top: 16px;
+  color: rgba(24, 48, 50, 0.5);
+}
+
+.cardWrapper .docInfoWrapper .docInfoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12px 0;
+}
+
+.cardWrapper .docInfoWrapper .docInfoContainer .docIconContainer .docIcon {
+  margin-right: 12px;
+  height: 32px;
+  width: 32px;
+}
+
+.cardWrapper .docInfoWrapper .docInfoContainer .docIconContainer .link {
+  color: #2E3E3F;
+  font-size: 16px;
+}
+
+.cardWrapper .docInfoWrapper .docInfoContainer .docIconContainer span {
+  color: rgba(24, 48, 50, 0.5);
+}
+
+.cardWrapper .docInfoWrapper .docInfoContainer .buttonContainer {
+  color: rgba(24, 48, 50, 0.5);
+  cursor: pointer;
+}
+
+.cardWrapper .docInfoWrapper .docInfoContainer .buttonContainer .button:first-child {
+  margin-right: 16px;
+}
+
+.cardWrapper .detailsButton {
+  margin: 12px 0 20px;
+  padding: 13px 0;
+  cursor: auto;
+}
+
+.cardWrapper .detailsButton label {
+  cursor: pointer;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .cardWrapper .docInfoWrapper .header {
+    font-size: 14px;
+  }
+  .cardWrapper .docInfoWrapper .docInfoContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cardWrapper .docInfoWrapper .docInfoContainer .docIconContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cardWrapper .docInfoWrapper .docInfoContainer .docIconContainer span {
+    display: none;
+  }
+  .cardWrapper .buttonContainer .button:first-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardWrapper {
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+  .cardWrapper .link {
+    font-size: 14px !important;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

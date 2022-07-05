@@ -1,0 +1,57 @@
+.linkWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border: 1px solid rgba(24, 48, 50, 0.15);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  padding: 15px 12px 15px 16px;
+  margin-bottom: 24px;
+}
+
+.linkWrapper .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.linkWrapper .img {
+  cursor: pointer;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+.linkWrapper .img img {
+  width: 18px;
+  height: 20px;
+}
+
+.body {
+  padding-bottom: 200px !important;
+}
+
+.body .sidebarFooter {
+  position: relative !important;
+  padding: 20px 0 20px !important;
+}
+/*# sourceMappingURL=styles.module.css.map */

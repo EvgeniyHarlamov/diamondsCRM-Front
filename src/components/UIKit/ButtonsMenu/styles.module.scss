@@ -1,0 +1,43 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/abstractClasses.scss';
+
+.buttonsWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    border-radius: 3px;
+    padding: 2px;
+    background-color: $color-bg-dark;
+
+    %button {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        padding: 11px 22px;
+        // min-width: 93.33px;
+        color: $default-input-font-color;
+        cursor: pointer;
+        @extend %no-select;
+
+    }
+
+    .buttonInactive {
+        @extend %button;
+        background-color: $color-bg-dark;
+    }
+
+    .buttonActive {
+        @extend %button;
+        color: $default-font-color;
+        background-color: $color-bg-white;
+    }
+}
+
+
+.label {
+    font-size: 14px;
+    line-height: 135%;
+    color: rgba(24, 48, 50, 0.5);
+    margin-bottom: 7px !important;
+}

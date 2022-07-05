@@ -1,0 +1,68 @@
+.cardWrapper {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.cardWrapper .cardContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cardWrapper .cardContainer .infoWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+}
+
+.cardWrapper .cardContainer .infoWrapper .icon img {
+  height: 48px;
+}
+
+.cardWrapper .cardContainer .infoWrapper .counter {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+}
+
+.cardWrapper .cardContainer .titleWrapper .title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 135%;
+}
+
+@media screen and (max-width: 320px) {
+  .cardWrapper {
+    padding: 15px;
+  }
+  .cardWrapper .titleWrapper {
+    min-height: 36px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardWrapper .infoWrapper {
+    margin-bottom: 12px !important;
+  }
+  .cardWrapper .infoWrapper .counter {
+    font-size: 24px !important;
+  }
+  .cardWrapper .titleWrapper .title {
+    font-size: 14px !important;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

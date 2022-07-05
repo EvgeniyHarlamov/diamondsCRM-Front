@@ -1,0 +1,10 @@
+.track {
+  width: 5px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .track {
+    width: 2px !important;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

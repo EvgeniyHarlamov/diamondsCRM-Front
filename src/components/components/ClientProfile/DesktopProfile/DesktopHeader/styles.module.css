@@ -1,0 +1,174 @@
+.wrapper .cityContainer .field, .wrapper .birthplaceContainer .field, .wrapper .avatarContainer .mainInfoContainer .inChargeContainer .field {
+  color: rgba(24, 48, 50, 0.5);
+  font-size: 14px;
+  padding-bottom: 8px;
+}
+
+.wrapper .cityContainer .value, .wrapper .birthplaceContainer .value {
+  color: #2E3E3F;
+  font-size: 16px;
+}
+
+.wrapper .cityContainer, .wrapper .birthplaceContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header {
+  padding-bottom: 0 !important;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr 1fr;
+  padding-bottom: 40px;
+}
+
+.wrapper .avatarContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.wrapper .avatarContainer .imgContainer {
+  margin-right: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 128px;
+  max-height: 128px;
+}
+
+.wrapper .avatarContainer .imgContainer img {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 210px;
+}
+
+.wrapper .avatarContainer .mainInfoContainer .inChargeContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 17px;
+}
+
+.wrapper .avatarContainer .mainInfoContainer .inChargeContainer .field {
+  font-size: 16px;
+  padding-bottom: 0;
+}
+
+.wrapper .avatarContainer .mainInfoContainer .inChargeContainer .inChargeName {
+  margin-left: 16px;
+}
+
+.wrapper .avatarContainer .mainInfoContainer .buttonWrapper {
+  width: 117px;
+}
+
+.buttonPanel .infoButtons, .buttonPanel .targetButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: row;
+      -ms-flex-pack: row;
+          justify-content: row;
+}
+
+.buttonPanel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 13px 0;
+}
+
+.buttonPanel .infoButtons .infoButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(24, 48, 50, 0.5);
+  cursor: pointer;
+}
+
+.buttonPanel .infoButtons .infoButton .title {
+  margin: 8px;
+}
+
+.buttonPanel .infoButtons .infoButton:first-child {
+  padding-right: 24px;
+}
+
+.buttonPanel .infoButtons .active {
+  color: #2E3E3F;
+}
+
+.buttonPanel .targetButtons .targetButton {
+  padding: 8.5px 16px;
+  min-width: 185px;
+}
+
+.buttonPanel .targetButtons .targetButton span {
+  font-size: 14px;
+  word-wrap: normal;
+}
+
+.buttonPanel .targetButtons .targetButton:first-child {
+  margin-right: 16px;
+  background-color: #EC9A29;
+  color: #FFFFFF;
+}
+
+.buttonPanel .targetButtons .takeToWork {
+  margin-left: 16px;
+  background-color: #2C5C5F;
+  color: #FFFFFF;
+}
+
+.logoFill {
+  height: 128px !important;
+  width: 128px;
+}
+
+.logoFill span {
+  font-size: 128px;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

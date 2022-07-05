@@ -1,0 +1,153 @@
+.cardWrapper .avatarWrapper .button:hover {
+  cursor: pointer;
+  background-color: #23474e;
+}
+
+.cardWrapper .avatarWrapper .button {
+  background-color: #2C5C5F;
+  color: #FFFFFF;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.cardWrapper {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                      supported by Chrome, Edge, Opera and Firefox */
+}
+
+.cardWrapper {
+  padding: 20px 20px 0;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cardWrapper .MainInfoWrapper {
+  margin-bottom: 20px;
+}
+
+.cardWrapper .MainInfoWrapper .AvatarAndServiceContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.cardWrapper .MainInfoWrapper .name {
+  font-weight: 500;
+  font-size: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cardWrapper .MainInfoWrapper .avatar img {
+  width: 64px;
+  height: 64px;
+  border-radius: 210px;
+}
+
+.cardWrapper .infoFieldContainer {
+  border-collapse: collapse;
+  border-top: 1px solid rgba(24, 48, 50, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12px 0;
+}
+
+.cardWrapper .infoFieldContainer .field {
+  color: rgba(24, 48, 50, 0.5);
+  font-size: 14px;
+}
+
+.cardWrapper .infoFieldContainer .fieldValue {
+  font-size: 14px;
+}
+
+.cardWrapper .avatarWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid rgba(24, 48, 50, 0.15);
+  padding-top: 26px;
+  padding-bottom: 30px;
+  min-height: 98px;
+}
+
+.cardWrapper .avatarWrapper .button {
+  font-size: 14px;
+  padding: 8.5px 16px;
+}
+
+.cardWrapper .avatarWrapper .timeWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: end;
+}
+
+.cardWrapper .avatarWrapper .timeWrapper .time {
+  font-size: 12px;
+  color: rgba(24, 48, 50, 0.5);
+}
+
+@media screen and (min-width: 768px) and (max-width: 871px) {
+  .cardWrapper .avatarWrapper .button {
+    max-width: 139px;
+    min-height: 61px;
+  }
+}
+
+@media screen and (max-width: 299px) {
+  .cardWrapper .avatarWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cardWrapper .avatarWrapper .button {
+    width: 100%;
+  }
+  .cardWrapper .avatarWrapper .timeWrapper {
+    margin-top: 8px;
+  }
+}
+
+.logoFill {
+  height: 64px !important;
+  width: 64px;
+}
+/*# sourceMappingURL=styles.module.css.map */

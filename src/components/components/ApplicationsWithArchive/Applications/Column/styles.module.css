@@ -1,0 +1,27 @@
+.firstContact, .inWork, .pay, .paid {
+  padding-left: 16px;
+  border-left: 3px solid #2C5C5F;
+  border-radius: 2px;
+}
+
+.inWork {
+  border-color: #EC9A29;
+}
+
+.pay {
+  border-color: #528DD2;
+}
+
+.paid {
+  border-color: #5BAE4E;
+}
+
+.columnWrapper .title {
+  margin-bottom: 2px;
+}
+
+.columnWrapper .desc {
+  color: rgba(24, 48, 50, 0.5);
+  margin-bottom: 19px;
+}
+/*# sourceMappingURL=styles.module.css.map */

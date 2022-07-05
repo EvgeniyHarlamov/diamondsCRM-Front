@@ -1,0 +1,135 @@
+@import '../../../styles/variables.scss';
+
+
+.filtersRow {
+    width: 100%;
+    display: flex;
+    padding-bottom: 34px;
+
+    .item {
+        flex-basis: 25%;
+        padding-left: 24px;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+    }
+
+
+    .wrapper {
+        display: flex;
+
+        .ageFrom {
+            input {
+                border-bottom-right-radius: 0;
+                border-top-right-radius: 0;
+            }
+        }
+
+        .ageTo {
+
+            input {
+                border-bottom-left-radius: 0;
+                border-top-left-radius: 0;
+
+            }
+        }
+    }
+
+    .separatorWrapper {
+        background-color: $color-bg-dark;
+        display: flex;
+        justify-content: center;
+
+        .separator {
+            background-color: $color-bg-dark;
+            height: 32px;
+            width: 1px;
+        }
+    }
+
+    // }
+}
+
+
+.searchBar {
+    padding-bottom: 26px;
+    display: flex;
+    width: 100%;
+
+    .searchBarInputWrapper {
+        width: 50%;
+    }
+
+    .searchBarDropdownWrapper {
+        width: 25%;
+        padding-left: 24px;
+    }
+}
+
+.filterHeaderContainerMargin {
+    margin-bottom: 24px !important;
+}
+
+.hideSortPlaceholder {
+  display: block;
+}
+
+.fixedWidth {
+  width: 25%;
+}
+
+@media screen and (max-width: $mobile-max-width-limit) {
+    .hideSortPlaceholder {
+      display: none;
+    }
+
+    .filterHeaderContainerMargin {
+        margin-bottom: 0 !important;
+    }
+
+    .searchBar {
+      display: none;
+    }
+
+    .filtersRow {
+        display: none;
+    }
+
+    .filtersHeaderWrapper {
+      padding-top: 24px;
+      padding-bottom: 24px;
+      .filtersHeaderContainer {
+        margin-bottom: 0;
+
+        .filterHeaderContainer {
+
+        .filterHeader, .filterHeaderActive{
+          font-size: 24px;
+
+          &:nth-child(2) {
+              margin-left: 12px;
+          }
+        }
+      }
+
+        .createApplicationBtn {
+          display: none;
+        }
+
+        .mobileButtonsContainer {
+          display: flex !important;
+          flex-direction: row;
+
+          .findButton {
+            margin-right: 12px;
+          }
+        }
+      }
+    }
+
+    .snowMore {
+      display: none;
+    }
+  }

@@ -1,0 +1,78 @@
+@import '../../../../styles/abstractClasses.scss';
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+    .item {
+        display: none;
+
+        @for $i from 1 through 8 {
+            &:nth-child(#{$i}) {
+                display: block;
+            }
+        }
+
+
+        width: 25%;
+        padding-left: 24px;
+        margin-bottom: 24px;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:nth-child(4n + 1) {
+            padding-left: 0;
+        }
+
+    }
+
+    .firstItem {
+        padding-left: 0;
+    }
+  }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .row {
+        .item {
+            width: 33%;
+
+            &:nth-child(3n + 1) {
+                padding-left: 0;
+            }
+
+            &:nth-child(4n + 1) {
+                padding-left: 24px;
+            }
+
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: $mobile-max-width-limit) {
+    .row {
+        flex-direction: column;
+
+        .item {
+            width: 100%;
+            padding-left: 16px;
+            padding-right: 16px;
+            margin-bottom: 8px;
+
+            &:nth-child(4n + 1) {
+                padding-left: 16px;
+            }
+
+            &:first-child {
+                padding-left: 16px;
+            }
+        }
+    }
+
+}

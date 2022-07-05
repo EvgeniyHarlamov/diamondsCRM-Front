@@ -1,0 +1,15 @@
+@import '../../../../styles/variables.scss';
+
+// .wrapper {
+//     padding-bottom: 32px;
+// }
+
+.wrapper {
+    display: none;
+}
+
+@media screen and (max-width: $mobile-max-width-limit) {
+    .wrapper {
+        display: block;
+    }
+}

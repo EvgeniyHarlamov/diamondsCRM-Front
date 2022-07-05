@@ -1,0 +1,37 @@
+.defaultButton, .greenButton {
+  background-color: #ECF1F1;
+  color: #2E3E3F;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.defaultButton:hover, .greenButton:hover {
+  cursor: pointer;
+}
+
+.greenButton {
+  background-color: #2C5C5F;
+  color: #FFFFFF;
+}
+
+.greenButton:hover {
+  background-color: #23474e;
+}
+
+@media screen and (max-width: 767px) {
+  .defaultButton, .greenButton {
+    padding: 15px 27px;
+    margin-bottom: 12px !important;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

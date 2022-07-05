@@ -1,0 +1,14 @@
+@import '../../../../styles/variables.scss';
+
+.wrapper {
+    display: block;
+}
+
+
+
+
+@media screen and (max-width: $mobile-max-width-limit) {
+    .wrapper {
+        display: none;
+    }
+}

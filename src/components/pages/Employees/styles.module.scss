@@ -1,0 +1,199 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/abstractClasses.scss";
+
+.filtersHeaderWrapper {
+  background-color: #FFFFFF;
+  padding-top: 2rem;
+
+  .filtersHeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+
+    .filterHeaderContainer {
+      display: flex;
+      align-items: center;
+
+      .filterHeader {
+        vertical-align: text-bottom;
+        color: $default-font-color;
+        font-weight: 500;
+        font-size: 32px;
+      }
+    }
+
+    .employeeBtn {
+      @extend %defaultBtn;
+      display: flex;
+      align-items: center;
+      border-radius: 4px;
+      max-height: 48px;
+      padding: 15px 24px;
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      line-height: 135%;
+
+      &:hover {
+        @extend %defaultBtnHover;
+      }
+    }
+
+    .mobileButtonsContainer {
+      display: none;
+    }
+  }
+}
+
+.searchBar {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-column-gap: 24px;
+  padding-bottom: 2rem;
+}
+
+
+@media screen and (max-width: $mobile-max-width-limit) {
+  .searchBar {
+    display: none;
+  }
+
+  .filtersHeaderWrapper {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    .filtersHeaderContainer {
+      margin-bottom: 0;
+
+      .filterHeaderContainer {
+
+      .filterHeader {
+        font-size: 24px;
+      }
+
+    }
+
+      .employeeBtn {
+        display: none;
+      }
+
+      .mobileButtonsContainer {
+        display: flex !important;
+        flex-direction: row;
+
+        .findButton {
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+
+  .snowMore {
+    display: none;
+  }
+}
+
+.tableContentWrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #F0F4F5;
+
+  .tableHeader {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+
+    .pagginationPanel {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+
+      .item {
+        margin-left: 32px;
+        display: flex;
+        align-items: center;
+
+        & span {
+          font-size: 14px;
+          color: $default-input-font-color;
+        }
+      }
+    }
+
+    .sortFiltersContainer {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+  }
+
+}
+
+.adminStatus {
+  @extend %status;
+}
+
+.managerStatus {
+  @extend %status;
+  width: 102px;
+  background-color: #EFAB3C;
+}
+
+.hideSortPlaceholder {
+  display: block;
+}
+
+
+@media screen and (max-width: $mobile-max-width-limit) {
+  .hideSortPlaceholder {
+    display: none;
+  }
+
+  .showMobileAdminButton {
+    display: block;
+  }
+
+  .showDesktopAdminButton {
+    display: none;
+  }
+
+  .adminStatus {
+    font-size: 12px;
+    max-width: 70px;
+  }
+
+  .managerStatus {
+    font-size: 12px;
+    max-width: 92px;
+  }
+
+  .statusWrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .tableContentWrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #F0F4F5;
+
+    .tableHeader {
+      .pagginationPanel {
+        display: flex;
+        gap: 0;
+        padding-left: 4 * $size-step !important;
+        .item {
+          margin-left: 0;
+          & span {
+            font-size: 14px;
+            color: $default-input-font-color;
+          }
+        }
+      }
+      .sortFiltersContainer {
+        padding-right: 4 * $size-step !important;
+      }
+    }
+  }
+}

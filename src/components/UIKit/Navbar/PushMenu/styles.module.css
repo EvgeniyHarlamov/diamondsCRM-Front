@@ -1,0 +1,37 @@
+.wrapper {
+  padding: 20px;
+}
+
+.wrapper .titleWrapper {
+  margin-bottom: 20px;
+}
+
+.wrapper .titleWrapper .titleContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .titleWrapper .titleContainer .title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 135%;
+}
+
+.wrapper .titleWrapper .titleContainer .clear {
+  font-size: 14px;
+  cursor: pointer;
+  color: rgba(24, 48, 50, 0.5);
+}
+
+.wrapper .nothing {
+  text-align: center;
+  margin-top: 20px;
+}
+/*# sourceMappingURL=styles.module.css.map */

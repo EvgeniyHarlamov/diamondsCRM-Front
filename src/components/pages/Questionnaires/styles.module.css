@@ -1,0 +1,125 @@
+.filtersRow {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 34px;
+}
+
+.filtersRow .item {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  padding-left: 24px;
+}
+
+.filtersRow .item:first-child {
+  padding-left: 0;
+}
+
+.filtersRow .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filtersRow .wrapper .ageFrom input {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.filtersRow .wrapper .ageTo input {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.filtersRow .separatorWrapper {
+  background-color: #F0F4F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.filtersRow .separatorWrapper .separator {
+  background-color: #F0F4F5;
+  height: 32px;
+  width: 1px;
+}
+
+.searchBar {
+  padding-bottom: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.searchBar .searchBarInputWrapper {
+  width: 50%;
+}
+
+.searchBar .searchBarDropdownWrapper {
+  width: 25%;
+  padding-left: 24px;
+}
+
+.filterHeaderContainerMargin {
+  margin-bottom: 24px !important;
+}
+
+.hideSortPlaceholder {
+  display: block;
+}
+
+.fixedWidth {
+  width: 25%;
+}
+
+@media screen and (max-width: 767px) {
+  .hideSortPlaceholder {
+    display: none;
+  }
+  .filterHeaderContainerMargin {
+    margin-bottom: 0 !important;
+  }
+  .searchBar {
+    display: none;
+  }
+  .filtersRow {
+    display: none;
+  }
+  .filtersHeaderWrapper {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .filtersHeaderWrapper .filtersHeaderContainer {
+    margin-bottom: 0;
+  }
+  .filtersHeaderWrapper .filtersHeaderContainer .filterHeaderContainer .filterHeader, .filtersHeaderWrapper .filtersHeaderContainer .filterHeaderContainer .filterHeaderActive {
+    font-size: 24px;
+  }
+  .filtersHeaderWrapper .filtersHeaderContainer .filterHeaderContainer .filterHeader:nth-child(2), .filtersHeaderWrapper .filtersHeaderContainer .filterHeaderContainer .filterHeaderActive:nth-child(2) {
+    margin-left: 12px;
+  }
+  .filtersHeaderWrapper .filtersHeaderContainer .createApplicationBtn {
+    display: none;
+  }
+  .filtersHeaderWrapper .filtersHeaderContainer .mobileButtonsContainer {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .filtersHeaderWrapper .filtersHeaderContainer .mobileButtonsContainer .findButton {
+    margin-right: 12px;
+  }
+  .snowMore {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

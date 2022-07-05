@@ -1,0 +1,19 @@
+.rowWrapper {
+  padding: 0 20px;
+}
+
+.rowOnlineWrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 10px 20px 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .rowOnlineWrapper {
+    -ms-grid-columns: 1fr 1fr 1fru;
+        grid-template-columns: 1fr 1fr 1fru;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

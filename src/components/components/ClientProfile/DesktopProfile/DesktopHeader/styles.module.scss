@@ -1,0 +1,170 @@
+@import '../../../../../styles/variables.scss';
+
+%field {
+    color: $default-input-font-color;
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+
+%value {
+    color: $default-font-color;
+    font-size: 16px;
+}
+
+%headerItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .field {
+        @extend %field;
+    }
+
+    .value {
+        @extend %value;
+    }
+}
+
+.header {
+    padding-bottom: 0 !important;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding-bottom: 40px;
+
+    .cityContainer {
+        @extend %headerItem;
+    }
+
+    .birthplaceContainer {
+        @extend %headerItem;
+    }
+
+    .avatarContainer {
+        display: flex;
+        flex-direction: row;
+
+        .imgContainer {
+            margin-right: 32px;
+            width: 128px;
+            height: 128px;
+          display: block;
+
+            img {
+               display: block;
+                height: 100%;
+                width: 100%;
+                max-width:100%;
+                max-height:100%;
+                border-radius: 210px;
+              object-fit: cover;
+            }
+        }
+
+        .mainInfoContainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+            .inChargeContainer {
+                display: flex;
+                align-items: center;
+                padding-bottom: 17px;
+
+                .field {
+                    @extend %field;
+                    font-size: 16px;
+                    padding-bottom: 0;
+                }
+                .inChargeName {
+                    margin-left: 16px;
+                }
+            }
+
+            .buttonWrapper {
+                width: 117px;
+            }
+        }
+    }
+}
+
+
+%buttonPanelItem {
+    display: flex;
+    justify-content: row;
+}
+
+.buttonPanel {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 0;
+
+    .infoButtons {
+        @extend %buttonPanelItem;
+
+        .infoButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $default-input-font-color;
+            cursor: pointer;
+
+            .title {
+                margin: 8px;
+            }
+
+            &:first-child {
+                padding-right: 24px;
+            }
+        }
+
+        .active {
+            color: $default-font-color;
+        }
+    }
+
+    .targetButtons {
+        @extend %buttonPanelItem;
+
+        .targetButton {
+            padding: 8.5px 16px;
+            min-width: 185px;
+
+            span {
+                font-size: $default-medium-font-size;
+                word-wrap: normal;
+            }
+
+            &:first-child {
+                margin-right: 16px;
+                background-color: $color-bg-orange;
+                color: $color-bg-white;
+            }
+        }
+        
+        .takeToWork {
+            margin-left: 16px;
+            background-color: #2C5C5F;
+            color: $color-bg-white;
+        }
+
+    }
+}
+
+.logoFill {
+    height: 128px !important;
+    width: 128px;
+
+    span {
+        font-size: 128px;
+
+    }
+}
+
+@media screen and (max-width: $mobile-max-width-limit) {
+    .header {
+        display: none;
+    }
+}

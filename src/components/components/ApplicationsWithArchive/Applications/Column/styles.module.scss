@@ -1,0 +1,37 @@
+@import '../../../../../styles/variables.scss';
+
+%columnBlock {
+    padding-left: 16px;
+    border-left: 3px solid #2C5C5F;
+    border-radius: 2px;
+  }
+
+  .firstContact {
+    @extend %columnBlock;
+  }
+
+  .inWork {
+    @extend %columnBlock;
+    border-color: #EC9A29;
+  }
+
+  .pay {
+    @extend %columnBlock;
+    border-color: #528DD2;
+  }
+
+  .paid {
+    @extend %columnBlock;
+    border-color: #5BAE4E;
+  }
+
+.columnWrapper {
+    .title {
+      margin-bottom: 2px;
+    }
+
+    .desc {
+      color: $default-input-font-color;
+      margin-bottom: 19px;
+    }
+  }

@@ -1,0 +1,35 @@
+@import '../../../../../styles/variables.scss';
+
+.boardInputCard {
+    background-color: $color-bg-white;
+    padding: 16px 20px 16px;
+    display: flex;
+    align-items: center;
+    border-radius: $default-border-radius;
+
+    .avatar {
+        align-self: flex-start;
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        textarea {
+            width: 100%;
+            border: 1px solid transparent;
+            resize: none;
+
+            &::placeholder {
+                color: $default-input-font-color;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: $mobile-max-width-limit) {
+    .boardInputCard {
+        margin-top: 8px;
+    }
+}

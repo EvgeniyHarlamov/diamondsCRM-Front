@@ -1,0 +1,33 @@
+@import '../../../../styles/variables.scss';
+
+
+.wrapper {
+    padding: 20px;
+
+    .titleWrapper {
+        margin-bottom: 20px;
+
+        .titleContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .title {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 135%;
+            }
+
+            .clear {
+                font-size: 14px;
+                cursor: pointer;
+                color: rgba(24, 48, 50, 0.5);
+            }
+        }
+    }
+    .nothing {
+        text-align: center;
+        margin-top: 20px
+    }
+
+}

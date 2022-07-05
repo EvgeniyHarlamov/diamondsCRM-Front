@@ -1,0 +1,241 @@
+.adminStatus:hover, .managerStatus:hover, .filtersHeaderWrapper .filtersHeaderContainer .employeeBtn:hover {
+  cursor: pointer;
+  background-color: #23474e;
+}
+
+.adminStatus, .managerStatus, .filtersHeaderWrapper .filtersHeaderContainer .employeeBtn {
+  background-color: #2C5C5F;
+  color: #FFFFFF;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.adminStatus, .managerStatus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 136px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 14px;
+  height: auto;
+  min-height: 32px;
+  padding: 5px 16px;
+  border-radius: 96px;
+}
+
+.filtersHeaderWrapper {
+  background-color: #FFFFFF;
+  padding-top: 2rem;
+}
+
+.filtersHeaderWrapper .filtersHeaderContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.filtersHeaderWrapper .filtersHeaderContainer .filterHeaderContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filtersHeaderWrapper .filtersHeaderContainer .filterHeaderContainer .filterHeader {
+  vertical-align: text-bottom;
+  color: #2E3E3F;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.filtersHeaderWrapper .filtersHeaderContainer .employeeBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+  max-height: 48px;
+  padding: 15px 24px;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 135%;
+}
+
+.filtersHeaderWrapper .filtersHeaderContainer .mobileButtonsContainer {
+  display: none;
+}
+
+.searchBar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+  grid-column-gap: 24px;
+  padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .searchBar {
+    display: none;
+  }
+  .filtersHeaderWrapper {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .filtersHeaderWrapper .filtersHeaderContainer {
+    margin-bottom: 0;
+  }
+  .filtersHeaderWrapper .filtersHeaderContainer .filterHeaderContainer .filterHeader {
+    font-size: 24px;
+  }
+  .filtersHeaderWrapper .filtersHeaderContainer .employeeBtn {
+    display: none;
+  }
+  .filtersHeaderWrapper .filtersHeaderContainer .mobileButtonsContainer {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .filtersHeaderWrapper .filtersHeaderContainer .mobileButtonsContainer .findButton {
+    margin-right: 12px;
+  }
+  .snowMore {
+    display: none;
+  }
+}
+
+.tableContentWrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #F0F4F5;
+}
+
+.tableContentWrapper .tableHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 64px;
+}
+
+.tableContentWrapper .tableHeader .pagginationPanel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.tableContentWrapper .tableHeader .pagginationPanel .item {
+  margin-left: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tableContentWrapper .tableHeader .pagginationPanel .item span {
+  font-size: 14px;
+  color: rgba(24, 48, 50, 0.5);
+}
+
+.tableContentWrapper .tableHeader .sortFiltersContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.managerStatus {
+  width: 102px;
+  background-color: #EFAB3C;
+}
+
+.hideSortPlaceholder {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .hideSortPlaceholder {
+    display: none;
+  }
+  .showMobileAdminButton {
+    display: block;
+  }
+  .showDesktopAdminButton {
+    display: none;
+  }
+  .adminStatus {
+    font-size: 12px;
+    max-width: 70px;
+  }
+  .managerStatus {
+    font-size: 12px;
+    max-width: 92px;
+  }
+  .statusWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .tableContentWrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #F0F4F5;
+  }
+  .tableContentWrapper .tableHeader .pagginationPanel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0;
+    padding-left: 16px !important;
+  }
+  .tableContentWrapper .tableHeader .pagginationPanel .item {
+    margin-left: 0;
+  }
+  .tableContentWrapper .tableHeader .pagginationPanel .item span {
+    font-size: 14px;
+    color: rgba(24, 48, 50, 0.5);
+  }
+  .tableContentWrapper .tableHeader .sortFiltersContainer {
+    padding-right: 16px !important;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

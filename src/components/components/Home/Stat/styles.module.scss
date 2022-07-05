@@ -1,0 +1,33 @@
+@import '../../../../styles/abstractClasses.scss';
+
+
+.row {
+    @extend %Row;
+
+    .item {
+        @extend %item;
+    }
+
+    .firstItem {
+        @extend %firstItem;
+    }
+}
+
+.grid {
+    display: none;
+}
+
+@media screen and (max-width: $mobile-max-width-limit) {
+    .row {
+        display: none;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:  1fr 1fr;
+        grid-column-gap: 9px;
+        grid-row-gap: 8px;
+        padding: 0 16px;
+    }
+}

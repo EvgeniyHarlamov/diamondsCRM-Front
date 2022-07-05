@@ -1,0 +1,32 @@
+@import '../../.././../../../styles/variables.scss';
+
+.title {
+    display: flex;
+    flex-direction: column;
+
+    .nameWrapper {
+        display: flex;
+        justify-content: space-between;
+        .nameContainer {
+            display: flex;
+            flex-direction: column;
+
+            .name {
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            .matchPercent {
+                margin: 4px 0 16px 0;
+                color: $default-input-font-color;
+                font-size: $default-small-font-size;
+            }
+        }
+    }
+
+    .button {
+        padding: 13px 0;
+        margin-bottom: 20px;
+    }
+
+}

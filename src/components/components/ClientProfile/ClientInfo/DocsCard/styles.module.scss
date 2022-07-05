@@ -1,0 +1,124 @@
+@import '../../../../../styles/variables.scss';
+@import '../../../../../styles/abstractClasses.scss';
+
+.cardWrapper {
+    padding: 20px 20px 0;
+    background: $color-bg-white;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+    border-radius: $default-border-radius;
+    margin-bottom: 24px;
+
+    .MainInfoWrapper {
+        margin-bottom: 20px;
+
+        .name{
+            font-weight: 500;
+            font-size: 18px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+
+    .docInfoWrapper {
+        border-collapse: collapse;
+        border-top: 1px solid rgba(24, 48, 50, 0.15);
+        font-size: $default-medium-font-size;
+
+        .header {
+            margin-top: 16px;
+            color: $default-input-font-color;
+        }
+
+        .docInfoContainer {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+
+            .docIconContainer {
+                .docIcon {
+                    margin-right: 12px;
+                    height: 32px;
+                    width: 32px;
+                }
+
+                .link {
+                    color: $default-font-color;
+                    font-size: $default-large-font-size;
+                }
+
+                span {
+                    color: $default-input-font-color;
+                }
+            }
+
+            .buttonContainer {
+                color: $default-input-font-color;
+                cursor: pointer;
+                .button {
+                    &:first-child {
+                        margin-right: 16px;
+                    }
+                }
+            }
+            }
+    }
+
+
+    .detailsButton {
+        margin: 12px 0 20px;
+        padding: 13px 0;
+        cursor: auto;
+        label {
+            cursor: pointer;
+            margin: 0;
+        }
+    }
+  }
+
+
+  @media screen and (max-width: $mobile-max-width-limit) {
+    .cardWrapper {
+        .docInfoWrapper {
+            .header {
+                font-size: $default-medium-font-size;
+            }
+
+            .docInfoContainer {
+                display: flex;
+                align-items: center;
+
+                .docIconContainer  {
+                    display: flex;
+                    align-items: center;
+
+                    span {
+                        display: none;
+                    }
+                }
+
+
+            }
+        }
+
+        .buttonContainer {
+            .button {
+                &:first-child {
+                    display: none;
+                }
+            }
+        }
+
+    }
+  }
+
+  @media screen and (max-width: $mobile-max-width-limit) {
+    .cardWrapper {
+        margin-top: 8px;
+        margin-bottom: 0;
+
+        .link {
+            font-size: $default-medium-font-size !important;
+        }
+    }
+}

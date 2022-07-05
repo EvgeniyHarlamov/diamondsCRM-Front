@@ -1,0 +1,49 @@
+@import '../../../../../../../styles/variables.scss';
+
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-collapse: collapse;
+    border-bottom: 1px solid $default-border-color;
+    padding: 16px 0;
+
+    .field {
+        color: $default-input-font-color;
+    }
+
+    // &:last-child {
+    //     border-bottom: 1px solid transparent;
+    // }
+}
+
+.onelineRow {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-bottom: 1px solid $default-border-color;
+    padding: 16px 0;
+
+    .field {
+        padding-bottom: 8px;
+        color: $default-input-font-color;
+    }
+
+    .value {
+        p {
+            line-height: 135%;
+        }
+    }
+
+    &:last-child {
+        border-bottom: 1px solid transparent;
+    }
+}
+
+@media screen and (max-width: $mobile-max-width-limit) {
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+}

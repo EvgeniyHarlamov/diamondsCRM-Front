@@ -1,0 +1,11 @@
+.wrapper {
+  padding-top: 27px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 24px;
+          column-gap: 24px;
+  padding-bottom: 24px;
+}
+/*# sourceMappingURL=styles.module.css.map */

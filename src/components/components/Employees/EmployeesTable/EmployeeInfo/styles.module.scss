@@ -1,0 +1,52 @@
+@import '../../../../../styles/variables.scss';
+
+
+.sidebarFooter {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+
+    .btnsContainer {
+        display: flex;
+        height: 48px;
+    }
+
+    .saveButtonWrapper {
+        margin-bottom: 12px;
+
+        .button {
+            height: 48px !important;
+            font-size: $default-large-font-size;
+            // padding: 15px 27px;
+        }
+    }
+}
+
+
+@media screen and (max-width: $mobile-max-width-limit) {
+    .sidebarFooter {
+        position: relative;
+        bottom: auto;
+        padding: 0;
+
+        .btnsContainer {
+            flex-direction: column;
+            height: auto;
+        }
+
+        .newPasswordButton {
+            padding: 15px 27px;
+            margin-bottom: 12px !important;
+        }
+
+        .deleteEmployee {
+            padding: 15px 27px;
+        }
+
+        .saveButtonWrapper {
+            margin-bottom: 0;
+        }
+    }
+}

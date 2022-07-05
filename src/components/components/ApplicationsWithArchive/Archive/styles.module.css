@@ -1,0 +1,198 @@
+.adminStatus:hover, .managerStatus:hover {
+  cursor: pointer;
+  background-color: #23474e;
+}
+
+.adminStatus, .managerStatus {
+  background-color: #2C5C5F;
+  color: #FFFFFF;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.adminStatus, .managerStatus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 136px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 14px;
+  height: auto;
+  min-height: 32px;
+  padding: 5px 16px;
+  border-radius: 96px;
+}
+
+.tableContentWrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #F0F4F5;
+}
+
+.tableContentWrapper .tableHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 64px;
+}
+
+.tableContentWrapper .tableHeader .pagginationPanel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.tableContentWrapper .tableHeader .pagginationPanel .item {
+  margin-left: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tableContentWrapper .tableHeader .pagginationPanel .item span {
+  font-size: 14px;
+  color: rgba(24, 48, 50, 0.5);
+}
+
+.tableContentWrapper .tableHeader .sortFiltersContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.adminStatus, .managerStatus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 136px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 14px;
+  height: auto;
+  min-height: 32px;
+  padding: 5px 16px;
+  border-radius: 96px;
+}
+
+.managerStatus {
+  width: 102px;
+  background-color: #EFAB3C;
+}
+
+.hideSortPlaceholder {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .hideSortPlaceholder {
+    display: none;
+  }
+  .snowMore {
+    display: none;
+  }
+  .adminStatus {
+    font-size: 12px;
+    max-width: 70px;
+  }
+  .managerStatus {
+    font-size: 12px;
+    max-width: 92px;
+  }
+  .statusWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .tableContentWrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #F0F4F5;
+  }
+  .tableContentWrapper .tableHeader .pagginationPanel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0;
+    padding-left: 16px !important;
+  }
+  .tableContentWrapper .tableHeader .pagginationPanel .item {
+    margin-left: 0;
+  }
+  .tableContentWrapper .tableHeader .pagginationPanel .item span {
+    font-size: 14px;
+    color: rgba(24, 48, 50, 0.5);
+  }
+  .tableContentWrapper .tableHeader .sortFiltersContainer {
+    padding-right: 16px !important;
+  }
+}
+
+.inChargeWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.inChargeWrapper .inChargeName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .inChargeWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .inChargeWrapper .inChargeName {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

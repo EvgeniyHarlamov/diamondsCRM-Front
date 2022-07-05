@@ -1,0 +1,432 @@
+@import './variables.scss';
+@import './abstractClasses.scss';
+
+
+.page {
+    background-color: #F0F4F5;
+    min-height: 100vh;
+}
+
+.header {
+  box-shadow: $box-shadow;
+  padding-top: 34px;
+  padding-bottom: 8 * $size-step;
+  background-color: $color-bg-white;
+}
+
+.label {
+    font-size: 14px;
+    line-height: 135%;
+    color: $default-input-font-color;
+    margin-bottom: 7px !important;
+}
+
+.formList {
+    display: flex;
+    flex-direction: column;
+    // gap: $default-sidebar-gap;
+    height: 100%;
+
+    .item {
+        margin-bottom: $default-sidebar-gap;
+    }
+
+
+    .sidebar-footer {
+        width: 100%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 20px;
+
+        .btns-container {
+            display: flex;
+            button {
+              margin-right: 16px;
+
+              &:last-child() {
+                margin-right: 0;
+              }
+            }
+            // justify-content: space-between;
+            height: 48px;
+        }
+
+    }
+  }
+
+@media screen and (max-width: $mobile-max-width-limit) {
+    .formList {
+        .sidebar-footer {
+            position: relative;
+            bottom: auto;
+            padding: 0;
+            .btns-container {
+                flex-direction: column;
+            }
+
+            .newPasswordButton {
+                padding: 15px 27px;
+                margin-bottom: 12px !important;
+            }
+
+            .deleteEmployee {
+                padding: 15px 27px;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .formList {
+        .sidebar-table-footer {
+            margin-bottom: -3rem;
+        }
+    }
+}
+
+%pagBtn {
+    border: 1px solid transparent;
+    border-radius: 99px;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    color: $default-input-font-color;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-bottom: 4rem;
+    width: 100%;
+
+    .back {
+      margin-right: 8px;
+    }
+
+    .fourth {
+      margin-left: 8px;
+    }
+  }
+
+  .pagItem {
+    @extend %pagBtn;
+
+    &:hover {
+      color: $default-btn-color;
+    }
+  }
+
+  .activePagItem {
+    @extend %pagBtn;
+    background: #2C5C5F;
+    color: #FFFFFF;
+
+    &:hover {
+      color: #FFFFFF;
+    }
+  }
+
+  .arrowBtn {
+    @extend %pagBtn;
+    background-color: #DCE5E6;
+  }
+
+
+  .row {
+    display: flex;
+    gap: 8px;
+  }
+
+
+  .filtersHeaderWrapper {
+    background-color: #FFFFFF;
+    padding-top: 2rem;
+
+    .filtersHeaderContainer {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+
+      .filterHeaderContainer {
+        display: flex;
+        align-items: center;
+
+        .filterHeader {
+          vertical-align: text-bottom;
+          color: $default-input-font-color;
+          font-weight: 500;
+          font-size: 32px;
+
+        }
+
+        .filterHeaderActive {
+          vertical-align: text-bottom;
+          color: $default-font-color;
+          font-weight: 500;
+          font-size: 32px;
+        }
+
+        .filterHeader, .filterHeaderActive {
+            &:nth-child(2) {
+                margin-left: 24px;
+            }
+
+            &:hover {
+              cursor: pointer;
+            }
+        }
+      }
+
+      .employeeBtn {
+        @extend %defaultBtn;
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        max-height: 48px;
+        padding: 15px 24px;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        line-height: 135%;
+
+        &:hover {
+          @extend %defaultBtnHover;
+        }
+      }
+
+      .mobileButtonsContainer {
+        display: none;
+      }
+    }
+  }
+
+  .searchBar {
+    // display: flex;
+    // flex-direction: column;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    // grid-column-gap: 24px;
+    padding-bottom: 2rem;
+
+    .searchBarInput {
+      margin-right: 23px;
+    }
+  }
+
+  @media screen and (max-width: $mobile-max-width-limit) {
+    .searchBar {
+      display: none;
+    }
+
+    .filtersHeaderWrapper {
+      padding-top: 24px;
+      padding-bottom: 24px;
+      .filtersHeaderContainer {
+        margin-bottom: 0;
+
+        .filterHeaderContainer {
+
+        .filterHeader, .filterHeaderActive{
+          font-size: 24px;
+
+          &:nth-child(2) {
+              margin-left: 12px;
+          }
+        }
+      }
+
+        .createApplicationBtn {
+          display: none;
+        }
+
+        .mobileButtonsContainer {
+          display: flex !important;
+          flex-direction: row;
+
+          .findButton {
+            margin-right: 12px;
+          }
+        }
+      }
+    }
+
+    .snowMore {
+      display: none;
+    }
+  }
+
+  .tableContentWrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #F0F4F5;
+
+    .tableHeader {
+      display: flex;
+      justify-content: space-between;
+      height: 64px;
+
+      .pagginationPanel {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+
+        .item {
+          margin-left: 32px;
+          display: flex;
+          align-items: center;
+
+          & span {
+            font-size: 14px;
+            color: $default-input-font-color;
+          }
+        }
+      }
+
+      .sortFiltersContainer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+
+    }
+
+  }
+
+  .hideSortPlaceholder {
+    display: block;
+  }
+
+
+  @media screen and (max-width: $mobile-max-width-limit) {
+    .hideSortPlaceholder {
+      display: none;
+    }
+
+    .tableContentWrapper {
+      width: 100%;
+      height: 100%;
+      background-color: #F0F4F5;
+
+      .tableHeader {
+        .pagginationPanel {
+          display: flex;
+          gap: 0;
+          padding-left: 4 * $size-step !important;
+          .item {
+            margin-left: 0;
+            & span {
+              font-size: 14px;
+              color: $default-input-font-color;
+            }
+          }
+        }
+        .sortFiltersContainer {
+          padding-right: 4 * $size-step !important;
+        }
+      }
+    }
+  }
+
+  // .filtersRow {
+  //   display: flex;
+
+  //   .filtersRowItem {
+  //     margin-right: 24px;
+  //   }
+  // }
+
+  .Row {
+    display: flex;
+    flex-wrap: wrap;
+    // padding-bottom: 34px;
+    .item {
+        width: 25%;
+        padding-left: 24px;
+        margin-bottom: 24px;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+    }
+
+    .firstItem {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: $mobile-max-width-limit) {
+    .Row {
+        flex-direction: column;
+
+        .item {
+            width: 100%;
+            padding-left: 16px;
+            padding-right: 16px;
+            margin-bottom: 8px;
+
+            &:first-child {
+                padding-left: 16px;
+            }
+        }
+    }
+
+}
+
+// .label {
+//   font-size: 16px;
+//   line-height: 135%;
+//   color: $default-input-font-color;
+// }
+
+.scrollbar {
+  width: 100% !important;
+  height: 100vh !important;
+}
+
+.CircularProgressbar-text{
+  font-weight: 500;
+}
+
+.sidebar-button {
+  &:first-child {
+    margin-right: 8px !important;
+  }
+
+  &:last-child {
+    margin-left: 8px !important;
+  }
+}
+
+@media screen and (max-width: $mobile-max-width-limit) {
+  .sidebar-button {
+    &:first-child, &:last-child {
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+    }
+  }
+  .scrollbar {
+    height: auto !important;
+  }
+
+}
+
+.loaderWrapper {
+  height: 320px;
+  display: flex; // make us of Flexbox
+  align-items: center; // does vertically center the desired content
+  justify-content: center; // horizontally centers single line items
+  text-align: center; // optional, but helps horizontally center text that breaks into multiple lines
+}
+
+.loaderWrapperTop {
+  height: 100vh;
+  margin-top: 100px;
+  display: flex; // make us of Flexbox
+  justify-content: center; // horizontally centers single line items
+  text-align: center; // optional, but helps horizontally center text that breaks into multiple lines
+}
